@@ -42,7 +42,7 @@ html{
 }
 .boton:hover{
     background-color: var(--hover);
-    font-size:1.4rem;
+    /* font-size:1.4rem; */
 }
 a{
     text-decoration:none;
