@@ -78,7 +78,7 @@ body{
     color:var(--negro);
     font-size: 1.6rem;
     text-transform:uppercase;
-    margin-right: 3rem;
+    margin-right: 5rem;
     margin-bottom: 2rem;
 }
 @media (min-width: 768px){
