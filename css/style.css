@@ -5,7 +5,8 @@
 --gris: #e1e1e1;
 --primario: rgb(197, 199, 63);
 --hover: rgb(209, 212, 20);
---gradient: rgba(0, 0, 0,0.7)
+--gradient: rgba(0, 0, 0,0.7);
+--gradient-banner: rgba(0, 0, 0, 0.6);
 }
 
 html{
@@ -138,7 +139,7 @@ body{
 /* Contenido principal */
 .contenido-principal{
     margin-top:-4rem;
-    height: 60rem;
+    height: 100vh;
     background-color: var(--blanco);
 }
 .banner {
@@ -155,10 +156,57 @@ body{
 }
 
 .banner__contenedor{
-    padding: 2rem;
-    height: 30rem;
+    position: relative;
+    padding: 1.5rem;
+    height: 20rem;
     background-image: url(../img/hotel_fachada.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+.banner__contenedor__texto {
+    height: 8rem;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: var(--gradient-banner);
+    color: var(--blanco);
+}
+.banner__contenedor__texto__title{
+     margin-bottom: 1rem;
+     font-size: 1.4rem;
+     word-spacing: .2rem;
+     text-transform: uppercase;
+}
+
+.banner__contenedor__texto__link{
+    color: var(--primario);
+    text-transform: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.banner__contenedor__texto__link span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.banner__contenedor--1{
+    background-image: url(../img/hotel_fachada2.jpg);
+    background-size: cover;
+    background-position: center right;
+}
+
+.banner__contenedor--2 {
+    background-image: url(../img/habitacion.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner__contenedor--3 {
+    background-image: url(../img/comida.jpg);
+    background-size: cover;
+    background-position: center right;
 }
