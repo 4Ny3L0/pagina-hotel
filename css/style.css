@@ -3,6 +3,7 @@
 --blanco: #ffffff;
 --negro: #000000;
 --gris: #e1e1e1;
+--gris-texto: #a09e9e;
 --primario: rgb(197, 199, 63);
 --hover: rgb(209, 212, 20);
 --gradient: rgba(0, 0, 0,0.7);
@@ -31,6 +32,16 @@ html{
 }
 .center-text{
     text-align:center;
+}
+.content-title {
+    color: var(--gris-texto);
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    padding-bottom: 2rem;
+}
+.border-dashed{
+    border-bottom: 2px dashed var(--gris-texto);
+    margin-bottom: 2rem;
 }
 .boton{
     padding:1.5rem;
@@ -98,7 +109,7 @@ body{
 
 /* Header */
 .header{
-    /* margin-top: 5rem; */
+    
     height: 60rem;
     background-size: cover;
     background-image: url(../img/hotel_fachada.jpg);
@@ -139,7 +150,7 @@ body{
 /* Contenido principal */
 .contenido-principal{
     margin-top:-4rem;
-    height: 100vh;
+    height: auto;
     background-color: var(--blanco);
 }
 .banner {
@@ -176,7 +187,7 @@ body{
 }
 .banner__contenedor__texto__title{
      margin-bottom: 1rem;
-     font-size: 1.4rem;
+     font-size: 1.6rem;
      word-spacing: .2rem;
      text-transform: uppercase;
 }
@@ -184,7 +195,7 @@ body{
 .banner__contenedor__texto__link{
     color: var(--primario);
     text-transform: none;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
 }
 .banner__contenedor__texto__link span{
@@ -209,4 +220,41 @@ body{
     background-image: url(../img/comida.jpg);
     background-size: cover;
     background-position: center right;
+}
+
+/* descripcion del hotel */
+.description__hotel{
+    padding: 2rem;
+}
+
+
+.contenedor__description__image{
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    .contenedor__description{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.contenedor__description__text{
+    color: var(--gris-texto);
+    font-size: 1.6rem;
+}
+
+/* Contenedor rooms */
+.contenedor__rooms{
+    padding: 2rem;
+}
+
+
+.footer{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 3rem;
+}
+.footer p{
+    font-size: 1.8rem;
 }
