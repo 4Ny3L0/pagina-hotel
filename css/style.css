@@ -56,6 +56,13 @@ html{
     background-color: var(--hover);
     /* font-size:1.4rem; */
 }
+
+.titulo-h3{
+    color: var(--primario);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
 a{
     text-decoration:none;
 }
@@ -247,6 +254,18 @@ body{
 /* Contenedor rooms */
 .contenedor__rooms{
     padding: 2rem;
+}
+.room__info__text{
+    color: var(--gris-texto);
+    font-size: 1.6rem;
+}
+@media (min-width: 768px){
+    .contenedor__rooms__info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
 }
 
 
