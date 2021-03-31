@@ -30,6 +30,9 @@ html{
 .no-padding{
     padding:0;
 }
+.padding-seccions-2{
+    padding: 2rem;
+}
 .center-text{
     text-align:center;
 }
