@@ -255,9 +255,12 @@ body{
 .contenedor__rooms{
     padding: 2rem;
 }
-.room__info__text{
+.info__text{
     color: var(--gris-texto);
     font-size: 1.6rem;
+}
+.room img{
+    height: 17rem;
 }
 @media (min-width: 768px){
     .contenedor__rooms__info{
