@@ -16,8 +16,8 @@ function navigation() {
 
 function topIcon() {
   //Observer
-  const observer = new IntersectionObserver((e) => {
-    const intercept = e[0].isIntersecting;
+  const observer = new IntersectionObserver((entries) => {
+    const intercept = entries[0].isIntersecting;
     console.log(intercept);
   });
 
