@@ -395,3 +395,34 @@ select:-webkit-autofill:focus {
     transition: background-color 5000s ease-in-out 0s;
     
 }
+
+
+/* Volver arriba */
+.go-up{
+    position:fixed;
+    z-index: 98;
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    font-size: 3rem;
+    right:.9rem;
+    bottom:7.5rem;
+    background-color: var(--primario);
+    text-align: center;
+    padding-top: .5rem;
+    color: var(--blanco);
+    border-radius: 25%;
+}
+.go-up a{
+    text-decoration: none;
+    color: var(--blanco);
+    z-index: 999;
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    padding:0;
+}
+.go-up:hover{
+    cursor:pointer;
+    background-color: var(--hover)
+}
