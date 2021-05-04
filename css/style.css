@@ -398,6 +398,9 @@ select:-webkit-autofill:focus {
 
 
 /* Volver arriba */
+.flecha{
+    display:none;
+}
 .go-up{
     position:fixed;
     z-index: 98;
