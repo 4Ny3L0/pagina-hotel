@@ -416,6 +416,15 @@ select:-webkit-autofill:focus {
     color: var(--blanco);
     border-radius: 25%;
 }
+@media (min-width: 768px){
+    .go-up{
+        width: 6rem;
+        height: 4.5rem;
+        right:2.5rem;
+        
+
+    }
+}
 .go-up a{
     text-decoration: none;
     color: var(--blanco);
