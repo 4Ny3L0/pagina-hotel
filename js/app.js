@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function navigation() {
   const enlaces = document.querySelectorAll(".scrollable");
-  const flecha = document.querySelector(".scrollable2");
+  const flecha = document.querySelector(".flecha");
   enlaces.forEach(function (enlace) {
     enlace.addEventListener("click", function (e) {
       e.preventDefault();

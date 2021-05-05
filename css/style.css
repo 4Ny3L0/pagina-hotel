@@ -276,6 +276,23 @@ body{
 
 
 /*Seccion de Restaurantes y comidas*/
+@media (min-width: 768px){
+    .contenedor__restaurante {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+    .texto, .imagen{
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+    .galeria-platillos{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        column-gap: 2rem;
+        margin-top: 5rem;
+    }
+}
 
 
 
@@ -400,10 +417,11 @@ select:-webkit-autofill:focus {
 /* Volver arriba */
 .flecha{
     display:none;
+    z-index: 99;
 }
 .go-up{
     position:fixed;
-    z-index: 98;
+    z-index: 99;
     width: 4rem;
     height: 4rem;
     display: block;
@@ -428,9 +446,9 @@ select:-webkit-autofill:focus {
 .go-up a{
     text-decoration: none;
     color: var(--blanco);
-    z-index: 999;
+    z-index: 98;
     width: 4rem;
-    height: 4rem;
+    height: 3rem;
     margin: 0;
     padding:0;
 }
