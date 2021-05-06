@@ -292,8 +292,11 @@ body{
         column-gap: 2rem;
         margin-top: 5rem;
     }
-}
 
+}
+.platillo img{
+    height: 16.7rem;
+}
 
 
 /*Seccion de contacto*/
